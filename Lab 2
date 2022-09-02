@@ -1,0 +1,34 @@
+
+humanage = float (input("Enter your age: ")) #human age
+
+
+decimal = (humanage * 7) % 1 # getting percent for use in finding month
+decimal = round (decimal, 2)
+
+dogyears = humanage*7 # finding dog years
+dogmonths = decimal * 12
+daypercent = round (dogmonths % 1, 2) # Getting % for finding dog days
+dogdays = daypercent*30
+
+print (f"your age in dog years is {int(dogyears)} years {int(dogmonths)} months {int(dogdays)} days")
+
+
+decimal = (humanage / 9) % 1 # getting percent for use in finding month
+decimal = round (decimal, 2)
+
+catyears = humanage / 9 # finding dog years
+catmonths = decimal * 12
+daypercent = round (catmonths % 1, 2) # Getting % for finding dog days
+catdays = daypercent*30
+
+print (f"your age in dog years is {int(catyears)} years {int(catmonths)} months {int(catdays)} days in cat age")
+
+decimal = (3 * ((((humanage**2)-47)/7)+12)) % 1 
+decimal = round (decimal, 2)
+
+horseyears = (3 * ((((humanage**2)-47)/7)+12)) # finding dog years
+horsemonths = decimal * 12
+daypercent = round (horsemonths % 1, 2) # Getting % for finding dog days
+horsedays = daypercent*30
+
+print (f"your age in horse years is {int(horseyears)} years {int(horsemonths)} months {int(horsedays)} days")
