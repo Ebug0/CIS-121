@@ -262,7 +262,7 @@ def numberfinder(filename):
 randomnumbergen("Test.txt")
 print(numberfinder("Test.txt")) """
 
-
+""" 
 def combiner(dict1, dict2):
     output = {}
     for key, values in dict1.items():
@@ -275,7 +275,7 @@ def combiner(dict1, dict2):
     return output
 test = {"Data":[3], "Info":"NA"}
 test2 = {"Data":[5], "Info": "NA"}
-print(combiner(test,test2)) 
+print(combiner(test,test2))  """
 
 """ 
 import random
@@ -300,3 +300,20 @@ def evenorodd(filename):
                 f.write(f"{i} : Odd\n")
 randomnumbergen("Test.txt")
 evenorodd("Test.txt") """
+
+
+from TestClasses import Dog
+
+brownie = Dog("brown", "brown", 24,24,24)
+
+from TestClasses import Person
+
+burger = Person("Mason", 18, "Snowman")
+burger.display()
+
+from TestClasses import Employee
+
+milky = Employee("TY", 15, 16, "DQ special forces")
+milky.yearlypay() 
+
+

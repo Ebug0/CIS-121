@@ -1,0 +1,2 @@
+Mean: Apples 6.114649681528663    Strawberry 6.077419354838709    Bananna 5.840425531914893
+Median: Apples 6    Strawberry 6    Bananna 6.0
