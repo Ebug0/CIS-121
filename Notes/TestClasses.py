@@ -76,6 +76,22 @@ class Client:
             self.__password = newpassword
         else:
             print("Your username or password was incorrect please try again")
-    
-#class UpdateUser(Client):
 
+class Document:
+
+    def __init__(self,authors,date):
+        self.author = authors
+        self.date = date
+
+    def getAuthors(self):
+        return self.author
+
+    def addAuthors(self,name):
+        self.author.append(name)
+
+        if name in self.author:
+            print(f"Name: {name} added to the list of authors!")
+        else:
+            print("Some error occured and the name was not added")
+        
+           
