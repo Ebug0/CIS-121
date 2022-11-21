@@ -25,6 +25,9 @@ class address():
 
     def getCountry(self):
         return self.country
+    
+    def __str__(self):
+        return f"Street: {self.street}\nCity: {self.city}\ncountry: {self.country}\nZipcode: {self.zipcode}\nState: {self.state}\n"
 
 class person(address):
 
@@ -33,6 +36,10 @@ class person(address):
         self.name = name
         self.phonenumber = phonenumber
         self.email = email
+
+    def __str__(self):
+        return f"Name: {self.name}\nPhonenumber: {self.phonenumber}\
+        \nEmail: {self.email}\nStreet: {self.street}\nCity: {self.city}\ncountry: {self.country}\nZipcode: {self.zipcode}\nState: {self.state}\n"
     
 class student(person):
 
@@ -46,6 +53,10 @@ class student(person):
 
     def getstudentnumber(self):
         return self.studentnumber
+
+    def __str__(self):
+        return f"StudentID: {self.studentnumber}\nGPA: {self.gpa}\nName: {self.name}\nPhonenumber: {self.phonenumber}\
+        \nEmail: {self.email}\nStreet: {self.street}\nCity: {self.city}\ncountry: {self.country}\nZipcode: {self.zipcode}\nState: {self.state}\n"
     
 class teacher(person):
 
@@ -70,5 +81,9 @@ class teacher(person):
 
     def calculateYearlySalary(self):
         return self.work_rate * self.workhours * 52
+    
+    def __str__(self):
+        return f"TeachID: {self.teacherid}\nHours worked per week: {self.workhours}\nYears of service: {self.years_of_service}\nName: {self.name}\nPhonenumber: {self.phonenumber}\
+        \nEmail: {self.email}\nStreet: {self.street}\nCity: {self.city}\nCountry: {self.country}\nZipcode: {self.zipcode}\nState: {self.state}\n"
 
 
